@@ -1,0 +1,25 @@
+server:
+  applicationConnectors:
+    - type: http
+      port: 8080
+
+# Database settings.
+database:
+
+  # the name of your JDBC driver
+  driverClass: org.postgresql.Driver
+
+  # the username
+  user: postgres
+
+  # the password
+  password: postgres
+
+  # the JDBC URL
+  url: jdbc:postgresql://localhost:5432/SpringApp
+
+  # any properties specific to your JDBC driver:
+  properties:
+    charSet: UTF-8
+    hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+    #hibernate.hbm2ddl.auto: create
